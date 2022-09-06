@@ -65,18 +65,17 @@ Problem
 `LintCode 1844 Medium <https://www.jiuzhang.com/problem/subarray-sum-equals-k-ii/>`_
 
 .. image:: ../_static/question/lint_1844.png
-   :scale: 30 %
+   :scale: 50 %
    :alt: Warning!
 
 :solution:`1844 Brutal Force`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. note::
+- Time :math:`O(n^3)`
 
-    Brutal Force
-    Time :math:`O(n^3)`
+.. tabs::
 
-    .. code-block:: python
+    .. code-tab:: python Python
 
         for left in range(n):
             for right in range(left, n):
@@ -109,7 +108,7 @@ Problem
 :solution:`1844 Prefix Sum + HashMap`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. hint::
+.. tip::
     Consider algorithms that's :math:`O(n)`
 
     - Two pointers: need sorting and non negative

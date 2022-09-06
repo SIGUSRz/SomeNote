@@ -1,2 +1,3 @@
 sphinx
-sphinx-rtd-dark-mode
+sphinx_rtd_theme
+sphinx-tabs

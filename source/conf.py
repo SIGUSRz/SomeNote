@@ -35,7 +35,7 @@ master_doc = 'index'
 extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.autodoc',
-    'sphinx_rtd_dark_mode'
+    "sphinx_tabs.tabs",
 ]
 
 language = 'zh_CN'
@@ -64,4 +64,4 @@ html_theme_options = {
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-html_css_files = ["css/hacks.css"]
+html_css_files = ["css/custom.css"]
