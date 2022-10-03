@@ -1,5 +1,4 @@
 .. include:: ../_static/.special.rst
-
 ##############
 System Design
 ##############
@@ -13,7 +12,7 @@ System Design
 网站服务器 Web Server
 =====================
 
-.. hint::
+.. note::
   - 提供 **超文本协议** 服务 (HTTP/HTTPS)
 
     - 网页浏览器(Web Browser)和网站服务器(Web Server)之间规定 **传输数据格式** 的协议
@@ -23,7 +22,7 @@ System Design
 数据库 Database
 ===============
 
-.. hint::
+.. note::
   - 存储数据的仓库
   - 一般不对公网提供访问权限, 只允许内网(Web Server) 访问
   - 支持数据的 **增删查改** Create Delete Search Update
@@ -33,7 +32,7 @@ System Design
 文件系统 File System
 ====================
 
-.. hint::
+.. note::
   - 操作系统 Operating System 的组成部分
   - 目录结构 (Index Structure)
   - 数据系统基于文件系统存在
@@ -44,7 +43,7 @@ System Design
 缓存 Cache
 ==========
 
-.. hint::
+.. note::
   - 相对概念, 可存在于:
 
     - 内存 Memcache
@@ -107,7 +106,7 @@ System Design
 场景 Scenario
 =============
 
-.. hint::
+.. note::
 
   - 需要设计哪些功能
   - 需要承载多大的访问量: QPS, MAU, DAU
@@ -140,7 +139,7 @@ Micro Service Design (微服务架构)
 Storage 存储
 ============
 
-.. hint::
+.. note::
   - Select: 为每个 application / Service 选择合适的存储结构
   - Schema: 细化 **数据结构**
 
@@ -159,7 +158,7 @@ SQL vs No SQL
 主键 Primary Key
 ================
 
-.. hint::
+.. note::
   - 用于唯一标记一条数据
   - ID 类型
 
@@ -272,7 +271,7 @@ Data Persistance
     Explanation: 
     cache cap is 1, set(2,1), get(2) and return 1, set(3,2) and delete (2,1), get(2) and return -1, get(3) and return 2.
 
-.. hint::
+.. note::
 
     - LRU 缓存机制可以通过hashmap 和 double linked list 维护所有在缓存中的 key-value pair
 
