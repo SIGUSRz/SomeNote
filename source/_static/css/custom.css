@@ -1113,10 +1113,26 @@ kbd.compound > .kbd,
     color: var(--navbar-heading-color);
 }
 
+/* Custom Role Colors */
 .problem {
+    font-size: large;
+    text-decoration: underline;
     color: var(--highlight-string-color);
 }
 
 .solution {
+    font-size: large;
+    text-decoration: underline;
     color: var(--highlight-type-color);
+}
+
+/* Custom cite color to mimic code block */
+cite {
+    font-style: normal;
+    font-size: 14px;
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,Courier,monospace;
+    color: var(--highlight-decorator-color);
+    background-color: var(--code-background-color);
+    border: 1px solid var(--code-border-color);
+    padding: 2px 5px;
 }
